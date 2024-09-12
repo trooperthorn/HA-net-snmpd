@@ -1,4 +1,4 @@
-# Home Assistant Add-on: SNMP server
+# Home Assistant Add-on: NET-SNMPv3 server
 
 A simple SNMP server.
 
