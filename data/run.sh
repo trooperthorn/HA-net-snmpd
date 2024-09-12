@@ -3,12 +3,12 @@
 CONFIG="/etc/snmp/snmpd.conf"
 
 {
-	echo "com2sec readonly default $(bashio::config 'community')"
 	echo "syslocation $(bashio::config 'location')"
 	echo "syscontact $(bashio::config 'name') <$(bashio::config 'email')>"
-	echo "group MyROGroup v2c readonly"
-	echo "view all included .1 80"
-	echo "access MyROGroup ''      any       noauth    exact  all    none   none"
+        echo "sysServices    72"
+	echo "CreateUser $(bashio::config 'snmpv3user') SHA $(bashio::config 'snmpv3pass') AES $(bashio::config 'snmpv3pass')"
+	echo "rouser $(bashio::config 'snmpv3user') priv .1"
+
 } > "${CONFIG}"
 
 bashio::log.info "Starting SNMP server..."
