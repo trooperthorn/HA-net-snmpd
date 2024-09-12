@@ -2,19 +2,21 @@
   "name": "SNMP Server",
   "version": "1.0.0",
   "slug": "snmpd",
-  "description": "SNMP v2c server for monitoring",
-  "url": "https://github.com/darthsebulba04/hassio-snmpd",
+  "description": "SNMP v3 SHA AES server for monitoring",
+  "url": "https://github.com/trooperthorn/hassio-snmpd",
   "arch": ["armhf", "armv7", "amd64", "i386"],
   "startup": "services",
   "boot": "auto",
   "options": {
-    "community": "public",
+    "snmpv3user": "",
+    "snmpv3pass": "",
     "location": "",
     "name": "",
     "email": ""
   },
   "schema": {
-    "community": "str",
+    "snmpv3user": "str",
+    "snmpv3pass": "str",
     "location": "str",
     "name": "str",
     "email": "str"
