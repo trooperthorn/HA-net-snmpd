@@ -2,6 +2,10 @@
 
 A simple SNMP server.
 
+Changed from SNMPv2 to SNMPv3. I have had documentation for SNMPv3 Net-SNMP for 10 years, just automating it for Home Assistant as an Addon.
+
+0.0.1 version uses SNMPv3 User. Pass and Auth passwords are the same for 0.0.1.
+
 ![Supports aarch64 Architecture][aarch64-shield] ![Supports amd64 Architecture][amd64-shield] ![Supports armhf Architecture][armhf-shield] ![Supports armv7 Architecture][armv7-shield] ![Supports i386 Architecture][i386-shield]
 
 This add-on provides a simple SNMP server for your network.
