@@ -3,7 +3,7 @@
   "version": "1.0.1",
   "slug": "snmpd",
   "description": "SNMP v3 SHA AES server for monitoring",
-  "url": "https://github.com/trooperthorn/hassio-snmpd",
+  "url": "https://github.com/trooperthorn/HA-net-snmpd",
   "arch": ["armhf", "armv7", "amd64", "i386"],
   "startup": "services",
   "boot": "auto",
@@ -24,5 +24,5 @@
   "ports": {
     "161/udp": 161
   },
-  "image": "trooperthorn/HA-net-snmpd"
+  "image": "trooperthorn/{arch}-HA-net-snmpd"
 }
